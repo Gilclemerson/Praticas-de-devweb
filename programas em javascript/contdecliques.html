@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter in click</title>
+    <style>
+        button{
+            padding:40px;
+            font-size:30px ;
+            border-radius: 30px 5px 5px 5px  ;
+        }
+        h1{
+            font-family:fantasy;
+        }
+    </style>
+</head>
+<body>
+    <h1> Counter in click</h1>
+ <button type="button" onclick="start()"> click at me
+
+ </button>
+
+ <button type="button" onclick="zero()"> zero the counter
+
+ </button>
+ <section id="result">
+<p>
+    "the counter it is  with"
+    <mark>0</mark>
+    "click"
+</p>
+ </section>
+
+ <script>
+var counter = 0
+var res = document.getElementById('result')
+    function start(){
+ counter ++
+ res.innerHTML = `<p> The counter it is with <mark>${counter}</mark> click.</p>` 
+
+
+    }
+
+    function zero(){
+    counter = 0
+    res.innerHTML = ``
+    }
+    res.innerHTML = `rack da matriz kkkkkkk`
+ </script>
+</body>
+
+</html>

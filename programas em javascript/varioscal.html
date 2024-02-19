@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Several calculations </title>
+    <style>
+
+body {
+            display: grid;
+            place-items: center;
+            height: 100vh; /* Isso garante que a altura do corpo seja 100% da altura da viewport */
+            margin: 0; /* Remove margens padrão do corpo */
+        }
+
+        button{
+            padding:30px;
+            font-style:italic;
+            font-size: large;
+            background:red;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>several calculations</h1>
+
+    <button type="button" onclick="start()"> click for calculate
+
+    </button>
+
+    <section id="demo">
+        <p> the result go to appear here </p>
+    </section>
+   
+    <script>
+      function start(){
+      var num = Number (prompt(' type a number'));
+      var res = document.getElementById('demo')
+       res.innerHTML =''
+      res.innerHTML+= `<p> the o number the to be analyzed here it will be the <strong>${num}</strong></p>`
+      res.innerHTML += `<p> the your value absolute é ${Math.abs(num)}</p> `
+      res.innerHTML += `<p> the your part entire and ${Math.trunc(num)}  </p>`
+      res.innerHTML += `<p> the value entire more next and ${Math.round(num)}  </p>`
+      res.innerHTML += `<p> the your source square and ${Math.sqrt(num)} </p>`
+      res.innerHTML += `<p> the your source cubic and ${Math.cbrt(num)} </p>`
+      res.innerHTML += `<p> the value in ${num} <sup>2</sup> and ${Math.pow(num, 2)}</p>`
+      res.innerHTML += ` the value in ${num}<sup>3</sup> and ${Math.pow(num,3)}`
+      
+    
+      
+
+
+      }
+    </script>
+</body>
+</html>

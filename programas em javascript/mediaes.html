@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> School average </title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh; /* Isso garante que a altura do corpo seja 100% da altura da viewport */
+            margin: 0; /* Remove margens padrão do corpo */
+            background:white;
+        }
+
+        button {
+            /* Se desejar, você pode adicionar estilos adicionais ao botão */
+            padding: 10px 20px;
+        }
+        #contener{
+            background:black;
+            color:white;
+            padding:100px;
+            font-size:30px;
+            margin:0 0 0 0;
+            border-radius: 25px ;
+        }
+      
+        </style>
+</head>
+<body>
+    <div id="contener">
+    <h1>School average</h1>
+    <label for="firstnote"> first note </label>
+    <input type="number" id="firstnote" name="firstnote" required><br><br>
+
+    <label for="lastnote"> last note </label>
+    <input type="number" id="lastnote" name="lastnote" required><br><br>
+
+    
+    
+    <button type="button"onclick="start()"> calculate
+
+    </button>
+</div>
+
+    <p id="result"></p>
+    <p id="classification"> </p>
+
+
+    <script>
+   
+   function start() {
+    let num1 = parseFloat(document.getElementById('firstnote').value);
+    let num2 = parseFloat(document.getElementById('lastnote').value);
+     
+    let calculate = (num1 + num2) /2;
+
+    document.getElementById('result').innerHTML=`your average and ${calculate}`;
+  
+
+   
+
+    let classification ='';
+
+    if(calculate >= 9 ){
+       classification = 'excellent';
+    } else if(calculate >= 7) {
+        classification = 'good'
+    } else{
+        classification = 'regular'
+    }
+       document.getElementById('classification').innerHTML=`${classification}`
+
+
+
+
+}
+    
+
+
+   
+
+    
+
+
+    </script>
+</body>
+</html>

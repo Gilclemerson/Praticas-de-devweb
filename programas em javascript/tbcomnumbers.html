@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> jobing with numbers</title>
+    <style>
+        button{
+         padding:30px ;
+         font-size:20px;
+         font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1> jobing with numbers</h1>
+    <button type="button" onclick="start()" > Click for calculate
+
+    </button>
+
+    <p id="demo"> the result he comes here!!! </p>
+
+    <script>
+        function start(){
+        var number = prompt ('digite um numero:')
+        var double = number * 2
+        var half = number / 2
+        document.getElementById('demo').innerHTML=`the double in ${number}, and ${double}, and the half and ${half}`
+        }
+    </script>
+</body>
+</html>

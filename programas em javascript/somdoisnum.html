@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> adding two number</title>
+    <style>
+        button{
+            padding: 30px ;
+            font-size:large;
+        }
+    </style>
+</head>
+<body>
+    <h1> adding two number</h1>
+<button type="button" onclick="start()"  > start the sum
+
+</button>
+<section id="demo">
+<p> here the magic it happens  </p>
+</section>
+<script>
+    function start(){
+        var n1 = Number (prompt(' type it one number'))
+        var n2 = Number (prompt(' type it one number'))
+        var sum =  n1 + n2
+         var res = sum
+         
+        
+         document.getElementById("demo").innerHTML=`the sum in between ${ n1}, and ${n2} and equal the ${res}`
+    }
+</script>
+</body>
+</html>
