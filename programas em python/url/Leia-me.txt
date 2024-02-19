@@ -1,0 +1,23 @@
+[+] MINIMO PARA RODAR:
+
+Python 3 ou a versão do Python 2
+
+[+] Modulos a instalar obrigatoriamente :):
+colorama
+google
+
+
+*CMD* - cd C:/ Python install google && install colorama
+
+pip install google
+pip install colorama
+
+python buscador.py -d "Dork" numero.de.sites -s lista.txt
+
+Substitua "Dork" pela consulta de pesquisa desejada, numero.de.sites pelo número de sites que você deseja buscar e lista.txt pelo nome do arquivo onde você deseja salvar os resultados.
+
+python buscador.py -d 
+
+*Por exemplo, se você quiser pesquisar "teste.php" e obter 10 resultados, salvando-os em um arquivo chamado "resultados.txt", o comando será: python buscador.py -d "teste.php" 10 -s resultados.txt
+
+*NAO COLOQUE MUITOS NUMEROS POIS NAO VAI CONSEGUIR FAZER MUITA PESQUISA VAI BLOUQEAR TEU IP*
