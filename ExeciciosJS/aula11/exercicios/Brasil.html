@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body{
+    background: black;
+    color:white;
+}   
+h1{
+    color:white;
+}
+
+input{
+    width:200px;
+
+
+}
+
+  </style>
+
+</head>
+<body>
+      <h1>De qual cidade voçê é ?</h1>
+   Cidade <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Confimar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+          var cd = window.document.querySelector('input#txtpais')
+          var res = window.document.querySelector('div#res')
+          var pais = (cd.value)
+          res.innerHTML='<p> Vinvendo em '+ pais + '</p>' 
+          if (pais != 'Brasil'){ 
+    res.innerHTML+= '<p>Voçê é Estrangeiro ! </p>'
+} 
+else{
+        res.innerHTML+= '<p>Voçê é Brasileiro </p> !' 
+    }
+
+        }
+    </script>
+</body>
+</html>
