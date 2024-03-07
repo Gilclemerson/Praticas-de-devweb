@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+          display: grid;
+          place-items: center;
+          height: 100vh; /* Isso garante que a altura do corpo seja 100% da altura da viewport */
+          margin: 0; /* Remove margens padrão do corpo */
+      }
+
+      button {
+          /* Se desejar, você pode adicionar estilos adicionais ao botão */
+          padding: 10px 20px;
+      }
+      button{
+          padding:30px;
+          font-style: italic;
+          font-size:large;
+      }
+      h1{
+          text-align: center;
+      }
+  </style>
+</head>
+<body>
+  <h1>Average of student </h1>
+
+  
+<!-- comentario teste  -->
+<button type="button" onclick="start()"> calculate Average
+
+</button>
+<section id="demo">
+  <p> the result go to appear here!!!  </p>
+</section>
+
+<script>
+  function start(){
+  var name = prompt('what is the name of student ? ');
+  var note1 = Number (prompt('what is the one note in '+ name));
+  var note2 = Number (prompt('in adding '+ note1 + ' what he was the other note in ' + name));
+  var calculate = (note1 + note2) /2
+  var average = calculate
+  document.getElementById('demo').innerHTML =` calculating the avarege final in <mark>${name}</mark> <br> The note obtained they were <mark>${note1}</mark> and <mark>${note2}</mark> <br> the average final it will be <mark>${calculate}</mark> `
+}
+
+</script>
+</html>
